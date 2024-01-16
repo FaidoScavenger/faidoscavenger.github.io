@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Styles/CF.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section>
+    <div class="navbar">
+        <div class="left-section">
+            <img src="file:///Users/jhoneinstienfelix/Documents/Programming%20Projects/StudIntLancerAdv/Background/NavBarIcon.png" width="22px" style="vertical-align: middle;">
+        </div>
+        <div class="middle-section">
+            <ul>
+                <li><a href="LP.html">Home</a></li>
+                <li><a href="AU.html#">About Us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="WN.html">What's New</a></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <a href="Download.html" class="download-btn">Download</a>
+        </div>
+    </div>
+</section>
+
+<body>
+    <h1>Contact Us</h1>
+    <p>Need Help? You can drop us a message describing the problem you <br>
+        have been experiencing, and we’ll look into it as soon as possible.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label for="inquiryType">Inquiry type*</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="" disabled selected>Select your inquiry type...</option>
+            <option value="general">General Inquiry</option>
+            <option value="technical">Technical Support</option>
+        </select>
+
+        <div class="form-row">
+            <div>
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your Full Name">
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="YourEmail2024@domain.com">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="responseLanguage">Preferred Response Language*</label>
+                <select id="responseLanguage" name="responseLanguage">
+                    <option value="english">English</option>
+                    <option value="filipino">Filipino</option>
+                </select>
+            </div>
+            <div>
+                <label for="priority">Priority*</label>
+                <select id="priority" name="priority">
+                    <option value="normal">Normal</option>
+                    <option value="urgent">Urgent</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="message">How can we help?*</label>
+        <textarea id="message" name="message" placeholder="Please enter your message..."></textarea>
+
+        <label for="attachments">Attachments</label>
+        <div class="file-drop">
+            <p id="attachments-preview">Drag and drop a file to attach it, or browse the file.</p>
+            <input type="file" id="attachments" name="attachments" accept=".pdf, .doc, .docx">
+        </div>
+
+        <button type="submit">Send Inquiry</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var inquiryType = document.getElementById("inquiryType").value;
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+
+            if (inquiryType === "") {
+                alert("Please select an inquiry type");
+                return false;
+            }
+
+            if (fullName === "" || /\d/.test(fullName)) {
+                alert("Please enter a valid full name");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Please fill in the email field");
+                return false;
+            }
+
+            // Add more validation logic as needed
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>

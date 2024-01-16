@@ -1,0 +1,181 @@
+body {
+    background-color: #483C69;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgba(197, 197, 197, 0.623), rgba(184, 184, 184, 0.206));
+    color: #fff;
+    padding: 4px 80px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 89px; /*Adjusts the middle section*/
+  }
+  
+  .navbar ul li {
+    margin-right: 68px;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  
+  .navbar a.download-btn {
+    width: 110px;
+    height: 30.408px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #6aff8299;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #F5E3FF;
+}
+
+.navbar a.download-btn:hover {
+    background-color: rgba(1, 52, 1, 0.713);
+}
+
+h1 {
+  color: #F5E3FF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 0;
+  line-height: normal;
+}
+
+p {
+  color: #F5E3FF;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 24px; 
+  max-width: 1100px; 
+  margin: auto; 
+}
+
+form {
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  max-width: 875px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Other styles remain the same */
+label {
+  display: block;
+  margin-top: 10px;
+  color: #F5E3FF;
+  font-family: Inter;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#fullName,
+#email,
+#responseLanguage, 
+#priority { 
+  width: 370px; 
+}
+
+#message {
+  height: 120px; /* Set the desired height */
+}
+
+#attachments-preview {
+  font-size: small;
+}
+
+.file-drop {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.file-drop input,
+.file-drop select {
+  width: calc(100% - 16px);
+}
+
+.file-drop label {
+  color: #F5E3FF;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  border: none; /* Remove border */
+}
+
+.file-drop label:hover {
+  text-decoration: none;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin: 30px auto; /* Center the button horizontally with top margin */
+  background-color: #709ba5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 40%;
+  display: block; /* Ensure the button behaves like a block element */
+}
+
+
+button:hover {
+  background-color: #6a9e9a;
+}

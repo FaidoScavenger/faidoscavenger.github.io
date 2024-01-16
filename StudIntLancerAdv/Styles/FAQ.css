@@ -1,0 +1,103 @@
+body {
+    background-color: #483C69;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgba(197, 197, 197, 0.623), rgba(184, 184, 184, 0.206));
+    color: #fff;
+    padding: 4px 80px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 89px; /*Adjusts the middle section*/
+  }
+  
+  .navbar ul li {
+    margin-right: 68px;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  
+  .navbar a.download-btn {
+    width: 110px;
+    height: 30.408px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #6aff8299;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #F5E3FF;
+}
+
+.navbar a.download-btn:hover {
+    background-color: rgba(1, 52, 1, 0.713);
+}
+
+/* Content */
+
+.content-section {
+    text-align: center;
+    margin-top: 85px;
+  }
+  
+  .content-section p {
+    text-align: justify; /* Justify the whole paragraph */
+  }
+
+  .content-section p:nth-child(2) {
+    text-align: left; /* Align the second paragraph (with numbers) to the left */
+  }
+
+  h2 {
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 900px;
+  }
+  
+  p {
+    margin-top: 0px;
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 28.2px; 
+    max-width: 1100px; 
+    margin-inline: auto;
+  }

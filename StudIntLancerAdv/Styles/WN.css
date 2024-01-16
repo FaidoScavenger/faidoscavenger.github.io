@@ -1,0 +1,168 @@
+body {
+    background-image: url(file:///Users/jhoneinstienfelix/Documents/Programming%20Projects/StudIntLancerAdv/Background/WN.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Navigation Bar */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgba(197, 197, 197, 0.623), rgba(184, 184, 184, 0.206));
+    color: #fff;
+    padding: 4px 80px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 89px; /*Adjusts the middle section*/
+  }
+  
+  .navbar ul li {
+    margin-right: 68px;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  
+  .navbar a.download-btn {
+    width: 110px;
+    height: 30.408px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #6aff8299;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #F5E3FF;
+}
+
+.navbar a.download-btn:hover {
+    background-color: rgba(1, 52, 1, 0.713);
+}
+
+/* Content */
+.content-section {
+    text-align: center;
+    margin-top: 85px;
+  }
+  
+  .content-icon {
+    width: 140px;
+    height: auto;
+    margin-bottom: -32px;
+  }
+  
+  h2 {
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900; /* Corrected value */
+}
+
+h1 {
+  color: #F5E3FF;
+  text-align: left;
+  margin-left: 10px;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 900; /* Corrected value */
+}
+  
+  .small-text {
+    font-weight: lighter;
+    font-size: 18px;
+  }
+
+  p {
+    margin-top: -20px;
+    color: #F5E3FF;
+    text-align: center;
+    font-family: Inter;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px; 
+    max-width: 830px; 
+    margin-inline: auto;
+  }
+
+  .transparent-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .suggestion-section {
+    text-align: center; /* Change text-align to center */
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-section h1 {
+    color: #F5E3FF;
+    text-align: center;
+    margin-left: 10px;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.suggestion-section p {
+  text-align: center;
+    color: #F5E3FF;
+    font-family: Inter;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px; 
+    margin-top: -20px;
+    max-width: 830px; 
+    margin-inline: auto;
+}
+
+.suggestion-section .contact-button {
+    background-color: #64b7c9;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 900;
+}

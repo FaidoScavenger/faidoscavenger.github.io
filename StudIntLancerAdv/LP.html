@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Styles/LP.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Add your styles for the notification bar here */
+      #notificationBar {
+          display: none;
+          background-color: #3498db;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 20%;
+          z-index: 1000;
+      }
+
+      #notificationBar button {
+          background-color: #fff;
+          color: #3498db;
+          border: none;
+          padding: 5px 10px;
+          margin-left: 10px;
+          cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+
+<section>
+    <div class="navbar">
+        <div class="left-section">
+          <img src="Background/NavBarIcon.png" width="22px" style="vertical-align: middle;">
+        </div>
+        <div class="middle-section">
+          <ul>
+            <li><a href="LP.html">Home</a></li>
+            <li><a href="AU.html#">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="WN.html">What's New</a></li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <a href="Download.html" class="download-btn">Download</a>
+        </div>
+      </div>
+ </section>
+
+    <div class="content-section">
+        <img src="Background/LPLogo.png" class="content-icon">
+        <h2>Why use StudIntLancer?</h2>
+        <p>Embark on a transformative freelancing journey with StudIntLancer – the ultimate app for students seeking unparalleled opportunities. Experience a sleek and intuitive interface that effortlessly connects you to a world of freelancing possibilities. StudIntLancer isn't just an app; it's a dynamic platform designed to empower student entrepreneurs. Elevate your skills, collaborate with peers, and unlock a pathway to success. Join StudIntLancer today and revolutionize your freelancing experience – where innovation meets a community of like-minded students, and every project is a chance to learn and grow. Don't just freelance; thrive with StudIntLancer.
+</p>
+
+    </div>
+
+    <section class="feature-section">
+      <div class="feature-content">
+          <h1>Empowering Through Chat:</h1>
+          <p>Revolutionize your experience with our chat feature that goes beyond conversation. Seamlessly connect with mentors, collaborate with peers, and receive instant assistance. Whether you're seeking guidance, looking for inspiration, or fostering professional connections, our chat empowers you every step of the way. Empowerment is just a message away—discover the possibilities with our dynamic chat functionality.</p>
+      </div>
+      <div class="feature-screenshot">
+          <img src="Background/Preview2.png" alt="Chat Screenshot">
+      </div>
+  </section>
+
+  <section class="feature-section">
+      <div class="feature-content">
+          <h1>Interactive UI, Zero Burden:</h1>
+          <p>Experience the future of effortless communication with our interactive UI that ensures a smooth and stress-free user journey. Our interface is thoughtfully designed to enhance engagement without overwhelming you. Enjoy intuitive navigation, clear prompts, and a user-friendly environment that facilitates interaction without burdening you with unnecessary complexities. Discover the ease of communication with an interface that works with you, not against you.</p>
+      </div>
+      <div class="feature-screenshot">
+          <img src="Background/Preview1.png" alt="UI Screenshot">
+      </div>
+  </section>
+
+  <div id="notificationBar">
+    <p>Welcome to our Promotional App! Check out our latest features.</p>
+    <button onclick="closeNotification()">Close</button>
+</div>
+
+
+<hr>
+<footer>
+  <p style="font-size: 18px;">@2023 StuTeam</p>
+</footer>
+
+<!-- Include the JavaScript at the end of the body to ensure the DOM is loaded -->
+<script>
+    // Function to show the notification bar
+    function showNotification() {
+        document.getElementById('notificationBar').style.display = 'block';
+    }
+
+    // Function to close the notification bar
+    function closeNotification() {
+        document.getElementById('notificationBar').style.display = 'none';
+    }
+
+    // Show the notification bar after a delay (e.g., 2 seconds)
+    setTimeout(showNotification, 2000);
+</script>
+
+</body>
+</html>
